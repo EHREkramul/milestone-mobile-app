@@ -10,9 +10,12 @@
 
 # SQLite / sqflite
 -keep class com.tekartik.sqflite.** { *; }
+-keep class org.sqlite.** { *; }
+-keep class org.sqlite.database.** { *; }
 
 # Shared Preferences
--keep class androidx.datastore.** { *; }
+-keep class io.flutter.plugins.sharedpreferences.** { *; }
+-keep class androidx.preference.** { *; }
 
 # Keep enums
 -keepclassmembers enum * {

@@ -15,7 +15,11 @@ void main() async {
   );
 
   final timerService = TimerService();
-  await timerService.init();
+  try {
+    await timerService.init();
+  } catch (_) {
+    // Database init failure is non-fatal; app will start with no active session
+  }
 
   runApp(
     ChangeNotifierProvider.value(
