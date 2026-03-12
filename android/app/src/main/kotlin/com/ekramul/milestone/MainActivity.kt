@@ -1,4 +1,4 @@
-package com.example.milestone
+package com.ekramul.milestone
 
 import io.flutter.embedding.android.FlutterActivity
 
